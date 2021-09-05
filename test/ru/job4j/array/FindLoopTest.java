@@ -64,7 +64,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind6() {
+    public void whenFindNegative1() {
         int[] data = new int[] {8, 14, 6, 11, 3, 5};
         int el = 5;
         int start = 1;
