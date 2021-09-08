@@ -66,6 +66,18 @@ public class MatrixCheckTest {
         }
 
         @Test
+        public void whenNotDiagonalX() {
+            char[][] input = {
+                    {' ', ' ', 'X'},
+                    {' ', 'X', ' '},
+                    {'X', ' ', ' '},
+            };
+            char[] result = MatrixCheck.extractDiagonal(input);
+            char[] expected = {' ', 'X', ' '};
+            Assert.assertArrayEquals(expected, result);
+        }
+
+        @Test
         public void whenDiagonalFullOne() {
             char[][] input = {
                     {'1', ' ', ' '},
